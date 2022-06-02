@@ -1,0 +1,52 @@
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.txt
+{
+    margin:auto;
+    margin-top: 80px;
+	display:block;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn btn-primary
+{
+    margin:auto;
+    display:block;
+}
+.cenform
+{
+    margin:auto;
+    display:block;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.btns
+{
+    margin:auto;
+    display:block;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mapaa
+{
+    margin:auto;
+    display:block;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.mapaa h2
+{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}

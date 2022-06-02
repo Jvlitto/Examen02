@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - Sneakers Chile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Style2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<script>
+    $(document).ready(function(){
+        $("#formulario").hide();
+        $("#btn_ocultar").click(function()
+        {
+            $("#formulario").hide();
+        });
+        $("#btn_mostrar").click(function(){
+            $("#formulario").show();
+        });
+    });
+</script>
+</head>
+<body>
+    <nav class="navbar fixed-top" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sneakers Chile</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sneakers Chile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Catalogo
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="#">Nike</a></li>
+                        <li><a class="dropdown-item" href="#">Adidas</a></li>
+                        <li><a class="dropdown-item" href="#">Supra</a></li>
+                        <li><a class="dropdown-item" href="#">Puma</a></li>
+                        <li><a class="dropdown-item" href="#">Reebok</a></li>
+                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="Descuentos.html">Descuentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Ubicanos.html">Ubicanos</a>
+                </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar por Marca o Modelo" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <script type="text/javascript" src="js/Script.js"></script>
+    <div class="txt">
+        Suscribete a nuestro Newsletter de Descuentos <br>
+        ¡Recibirás Ofertas, Lanzamientos y Oportunidades únicas!
+    </div>
+    <div class="container">
+        <form action="#" method="post" id="formulario" name="formulario">
+            <div class="form">
+                <div class="cenform">
+                    <div class="formu">
+                        Nombre:
+                        <input type="text" class="form-control" name="txt_nombre" id="txt_nombre">
+                        Apellidos:
+                        <input type="text" class="form-control" name="txt_apellidos" id="txt_apellidos">
+                        Rut:
+                        <input type="text" class="form-control" name="txt_rut" id="txt_rut">
+                        Teléfono:
+                        <input type="text" class="form-control" name="txt_telefono" id="txt_telefono">
+                        Correo:
+                        <input type="text" class="form-control" name="txt_correo" id="txt_correo">
+                        Sexo: <br>
+                        <label>
+                            <input type="radio" name="Sexo" value="Masculino">
+                            Masculino
+                        </label><br>
+                        <label>
+                            <input type="radio" name="Sexo" value="Femenino">
+                            Femenino
+                        </label><br>
+                        Selecciona tu Marca Favorita: <br>
+                        <select name="Marca" required>
+                            <option value="">Elige una opción</option><br><br>
+                            <option>Adidas</option>
+                            <option>Nike</option>
+                            <option>Jordan</option>
+                            <option>Puma</option>
+                            <option>New Balance</option> 
+                        </select><br>
+                        
+                        <input type="checkbox" id="checkbox1" name="checkbox1" required>
+                        Acepta nuestros <a href="#">Terminos y Condiciones</a> <br>
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="button" class="btn btn-primary" value="Enviar" id="btn_enviar" onclick="javascript:void(validar())">
+                        <input type="button" class="btn btn-danger" value="Limpiar" id="btn_limpiar" onclick="javascript:void(reset())"> 
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="btns">
+            <div class="botones">
+                <input type="button" class="btn btn-primary" value="Mostrar" id="btn_mostrar">
+                <input type="button" class="btn btn-primary" value="Ocultar" id="btn_ocultar">
+            </div>
+        </div>
+    </div>    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</html>

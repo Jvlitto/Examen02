@@ -1,0 +1,42 @@
+.imagen img
+{
+    width: 480px;
+    margin:auto;
+    margin-top: 80px;
+	display:block;
+}
+.texto ul
+{
+    text-decoration: none;
+    column-count: 2;
+    margin:auto;
+    margin-top: 50px;
+    list-style:none;
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.piedepag
+{
+    background: #e3f2fd;
+    margin-bottom: -10px;
+}
+.piedepag ul
+{
+    text-decoration: none;
+    column-count: 2;
+    margin:auto;
+    margin-top: 50px;
+    list-style:none;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.piedepag ul li a
+{
+    text-decoration: none;
+}
